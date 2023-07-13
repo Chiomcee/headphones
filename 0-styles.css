@@ -3,13 +3,58 @@
 /* Variables */
 
 /** Header styles **/
-.header-container {
+.hero { 
   display: flex;
-  justify-content: space-around;
-  align-items: center; /* Align items vertically center */
+  flex-grow: 1;
+} 
+
+/* Center the logo */
+header .container {
+  display: flex;
+  border: 1px solid blue;
+  align-items: center;
+  justify-content: space-between;
 }
 
-
-.div  
+/* Style the navigation links */
+nav {
   display: flex;
-  align-items: end;
+}
+
+nav a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Center the main content */
+main {
+  display: flex;
+  justify-content: center;
+  border: 2px solid blue;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+main section div.text {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  text-align: center;
+}
+
+/* Style the paragraphs and button */
+.text p {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px){ 
+  .wrapper { 
+    inline-size: 400px; 
+  }} 
