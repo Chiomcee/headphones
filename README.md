@@ -51,3 +51,4 @@ The "headphones" project is licensed under the [MIT License](https://opensource.
 Figma (https://www.figma.com/)
 Figma: The Collaborative Interface Design Tool
 Figma is the leading collaborative design tool for building meaningful products. Seamlessly design, prototype, develop, and collect feedback in a single platform.
+![Alt text](<readme image-1.png>)
