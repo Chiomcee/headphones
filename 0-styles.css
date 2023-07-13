@@ -1,11 +1,18 @@
 /* CSS Styling Reset */
+body,p,a,ul,li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;   
+}
 
 /* Variables */
 
 /** Header styles **/
 .hero { 
-  display: flex;
-  flex-grow: 1;
+  background-image: url('assets/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 } 
 
 /* Center the logo */
