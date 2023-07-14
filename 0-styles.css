@@ -1,21 +1,24 @@
-/* Variables */
+/* variables */
 
 :root {
-  --primary: #FF6565
+  --primary: #FF6565;
 }
 
-/* CSS Styling Reset */
+/* reset */
+
 body,p,a,ul,li {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style-type: none;
-  text-align: center; 
+  text-align: center;    
 }
 
+/* base styles */
+
 body {
-  font-family: "Source San Pro";
-  overflow: hidden;s
+  font-family: 'Source San Pro';
+  overflow-x: hidden;
 }
 
 button {
@@ -24,7 +27,7 @@ button {
   color: #f2f2f2;
   padding: 10px 25px;
   text-transform: uppercase;
-  box-shadow: 1px 2px 3px rgba(0, 2, 0, 0.05);
+  box-shadow: 1px 2px 3px rgba(0, 2, 0, 0.5);
   border: none;
   font-weight: 600;
   font-size: 0.5em;
@@ -32,36 +35,35 @@ button {
 
 button:hover {
   opacity: 0.9;
-  color: rgb(63, 63, 63)
+  color: rgb(63, 63, 63);
   box-shadow: none;
+
 }
 
 /* fonts */
 @font-face {
   font-family: 'Source San Pro';
-  src: url('..\fonts\SourceSansPro-Regular.otf');
+  src: url('fonts/SourceSansPro-Regular.otf');
 }
 
 section {
-  padding: 20px
+  padding: 10%;
 }
 
-/** Header styles **/
-.hero { 
+.hero {
   background-image: url('assets/background.png');
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   color: #f2f2f2;
-} 
-
-/* logo styling */
-.logo-container img {
-  width: 100px;
-  margin-top: 12px;
 }
 
-/* navigation links */
+.logo img {
+  width:100px;
+  margin-top: 12px;
+
+}
+
 .navlinks {
   display: none;
 }
@@ -70,7 +72,42 @@ section {
   padding: 75px 7px 0;
 }
 
-.flier-content p, #services p {
+.flier-content p, #flier p {
   font-size: 0.7em;
   padding: 5%;
 }
+
+/* responsive styles */
+
+  button {
+      font-size: 1em;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1000px) {
+  header {
+      display: flex;
+      justify-content: space-around;
+  }
+  .navlinks {
+      display: inline;
+      margin-top: 16px;
+
+  }
+
+  .navlinks li {
+      display: inline;
+  }
+
+  .navlinks ul a {
+      color: white;
+      text-align: center;
+      padding: 12px 16px;
+      text-decoration: none;
+    }
+
+  }
+  button {
+      font-size: 1.4em;
+  }
