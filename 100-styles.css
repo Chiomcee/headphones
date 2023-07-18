@@ -57,22 +57,50 @@
     background-size: cover;
     color: #f2f2f2;
   }
-  
-  .logo img {
-    width:100px;
-    margin-top: 12px;
-  
+
+  header {
+    display: flex;
+    padding: 5%;
+    align-items: center;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .logo-container {
+    margin: 0 auto;
   }
   
+  /*.logo img { 
+    width:100px;
+    margin-top: 12px; 
+  } */
+  
   .navlinks {
-    display: flex;
+    display: none;
+  }
+
+  .navlinks a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #menu-toggle:checked ~ .navlinks {
+    display: flex; /* Show the menu when the checkbox is checked */
+    flex-direction: column;
+    position: absolute;
+    font-weight: 900;
+    top: 80px;
+    left: 0;
+    width: 100%;
   }
   
   .flier-content h1 {
     padding: 75px 7px 0;
   }
   
-  .flier-content p, #services p {
+  .flier-content p, #what-to-do p {
     font-size: 0.7em;
     padding: 5%;
   }
@@ -97,14 +125,38 @@
     padding: 7%;
   }
   
-  .dots img {
+  /* .dots img {
     width: 60%;
     margin: 5%;
-  }
+  } */
   
   #contact-us form {
     padding: 5%;
     margin-bottom: 25%;
+  }
+
+  .dots .pentagon {
+    width: 200px;
+    height: 200px;
+    margin: 5%;
+    position: relative;
+    background-color: var(--primary);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .lorem {
+    font-size: 18px;
+    color: #fff;
   }
   
   #contact-us input {
