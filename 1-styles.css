@@ -68,22 +68,22 @@ section {
   display: none;
 }
 
-.flier-content h1 {
+.banner-content h1 {
   padding: 75px 7px 0;
 }
 
-.flier-content p, #services p {
+.banner-content p, #what-to-do p {
   font-size: 0.7em;
   padding: 5%;
 }
 
 
-.what-do-item-container {
+.what-to-do-item-container {
   padding: 15%;
   margin-top: 30%;
 }
 
-.what-to--item {
+.what-to-do-item {
   margin: 5%;
 }
 
@@ -133,7 +133,7 @@ footer img {
 
 /* tablet */
 @media screen and (min-width: 480px) {
-  .dots, .what-do-item-container{
+  .dots, .what-to-do-item-container{
       display: grid;
       grid-template-columns: 6fr 6fr;
       grid-column-gap: 20px;
@@ -141,7 +141,7 @@ footer img {
       justify-items: stretch;
       align-items: stretch;
   }
-  .what-do-item-container {
+  .what-to-do-item-container {
       margin-top: 0;
   }
   form input {
@@ -176,7 +176,7 @@ footer img {
       text-decoration: none;
     }
 
-  .dots, .flier-item-container {
+  .dots, .what-to-do-item-container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-column-gap: 20px;
@@ -184,7 +184,7 @@ footer img {
       justify-items: stretch;
       align-items: stretch;
   }
-  .flier-item-container {
+  .what-to-do-item-container {
       margin-top: 0;
   }
   button {

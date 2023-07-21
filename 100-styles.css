@@ -96,11 +96,11 @@
     width: 100%;
   }
   
-  .flier-content h1 {
+  .banner-content h1 {
     padding: 75px 7px 0;
   }
   
-  .flier-content p, #what-to-do p {
+  .banner-content p, #what-to-do p {
     font-size: 0.7em;
     padding: 5%;
   }
@@ -130,10 +130,6 @@
     margin: 5%;
   } */
   
-  #contact-us form {
-    padding: 5%;
-    margin-bottom: 25%;
-  }
 
   .dots .pentagon {
     width: 200px;
@@ -158,6 +154,11 @@
     font-size: 18px;
     color: #fff;
   }
+
+  #contact-us form {
+    padding: 5%;
+    margin-bottom: 25%;
+}
   
   #contact-us input {
     outline: 0;
@@ -181,65 +182,184 @@
   }
   
   /* responsive styles */
+
+/* tablet */
+@media screen and (min-width: 480px) {
+  body {
+      font-size: 1.2em;
+  }
+
+  .menu-icon {
+      display: none;
+  }
+
+  header {
+      display: flex;
+      justify-content: space-around;
+  }
+  .navlinks {
+      display: inline;
+
+  }
+
+  .navlinks li {
+      display: inline;
+  }
+
+  .navlinks ul a {
+      color: white;
+      text-align: center;
+      padding: 6px 8px;
+      text-decoration: none;
+      font-size: 1em;
+    }
   
-  
-  /* tablet */
-  @media screen and (min-width: 480px) {
-    .dots, .what-do-item-container{
-        display: grid;
-        grid-template-columns: 6fr 6fr;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        justify-items: stretch;
-        align-items: stretch;
-    }
-    .what-do-item-container {
-        margin-top: 0;
-    }
-    form input {
-        display: block;
-    }
-  
-    button {
-        font-size: 1em;
-    }
+  .dots, .what-to-do-item-container{
+      display: grid;
+      grid-template-columns: 6fr 6fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      justify-items: stretch;
+      align-items: stretch;
+  }
+  .what-to-do-item-container {
+      margin-top: 0;
+  }
+  form input {
+      display: block;
+  }
+
+  button {
+      font-size: 1em;
+  }
+
+  footer {
+      padding: 5%;
+  }
+
+  footer p {
+      font-size: 1.2em;
+  }
+
+  .footer-logo img {
+      width: 25%;
+      padding: 0;
+  }
+
+  .socials-container img {
+      width: 15%;
+      padding: 0;
+  }
+
+  #contact-us form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 0;
   }
   
-  /* desktop */
-  @media screen and (min-width: 1000px) {
-    header {
-        display: flex;
-        justify-content: space-around;
-    }
-    .navlinks {
-        display: inline;
-        margin-top: 16px;
-  
-    }
-  
-    .navlinks li {
-        display: inline;
-    }
-  
-    .navlinks ul a {
-        color: white;
-        text-align: center;
-        padding: 12px 16px;
-        text-decoration: none;
-      }
-  
-    .dots, .flier-item-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        justify-items: stretch;
-        align-items: stretch;
-    }
-    .flier-item-container {
-        margin-top: 0;
-    }
-    button {
-        font-size: 1.4em;
-    }
+  #contact-us input {
+      outline: 0;
+      border-width: 0 0 1px;
+      border-color: rgb(196, 196, 196);
+      margin: 35px;
+      
   }
+
+  #contact-us button.CTA {
+      width: 40%;
+      margin: 0 auto;
+  }
+
+  
+
+
+}
+
+/* desktop */
+@media screen and (min-width: 1000px) {
+body {
+    font-size: 1.6em;
+}
+
+.menu-icon {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+.navlinks {
+    display: inline;
+
+}
+
+.navlinks li {
+    display: inline;
+}
+
+.navlinks ul a {
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+
+.dots, .what-to-do-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+.what-to-do-item-container {
+    margin-top: 0;
+}
+button {
+    font-size: 1.4em;
+}
+
+footer {
+    padding: 5%;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+.footer-logo img {
+    width: 25%;
+    padding: 0;
+}
+
+.socials-container img {
+    width: 15%;
+    padding: 0;
+}
+
+#contact-us {
+    margin-bottom: 0;
+}
+
+#contact-us form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+#contact-us input {
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: rgb(196, 196, 196);
+    margin: 35px;
+    
+}
+
+#contact-us button.CTA {
+    width: 40%;
+    margin: 0 auto;
+}
+}
